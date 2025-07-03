@@ -339,3 +339,256 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5a6fd8;
 }
+
+/* Lagrange Interpolation Styles */
+.lagrange-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+}
+
+.lagrange-section h3 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section-description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.input-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.evaluation-input {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.evaluation-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.evaluation-input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.evaluation-input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.evaluation-display {
+  background: #e8f5e8;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  border-left: 3px solid #28a745;
+}
+
+.parameters {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.param-item {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.param-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.interpolation-formula {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.interpolation-formula h4 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.formula {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-family: 'Times New Roman', serif;
+}
+
+.formula-explanation {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.evaluation-tester {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  margin-bottom: 2rem;
+}
+
+.evaluation-tester h4 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.tester-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tester-controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.point-input {
+  width: 80px;
+  padding: 8px 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.point-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.result {
+  background: #e8f5e8;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #28a745;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+.visualization-controls {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.visualizations {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.visualizations .graph-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.visualizations .graph-container h4 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.legend-color.polynomial {
+  background: #667eea;
+}
+
+.legend-color.points {
+  background: #ff7300;
+}
+
+.mathematical-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.mathematical-details h4 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.details-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-item {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive design for Lagrange section */
+@media (max-width: 768px) {
+  .input-controls {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tester-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .formula {
+    font-size: 1.1rem;
+  }
+  
+  .visualizations {
+    grid-template-columns: 1fr;
+  }
+}

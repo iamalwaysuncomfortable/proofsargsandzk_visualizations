@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import LagrangeInterpolation from './LagrangeInterpolation'
 import './App.css'
 
 // Utility function to convert character to number (ASCII)
@@ -254,6 +255,8 @@ function App() {
           )}
         </div>
       </div>
+
+      <LagrangeInterpolation />
     </div>
   )
 }
